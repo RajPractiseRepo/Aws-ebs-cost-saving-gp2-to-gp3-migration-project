@@ -55,9 +55,9 @@ On the next page in the Target Section select AWS Lambda in AWS Service and sele
 
 
 # •	After Creating the Event Rule, try to create the EBS instance of Type GP2 and check whether that works. 
-# •	It will throw the following error saying AWS Lambda doesn’t have access to modify EBS Volume. We will need to assign permission to the AWS Lambda Role.
+  •	It will throw the following error saying AWS Lambda doesn’t have access to modify EBS Volume. We will need to assign permission to the AWS Lambda Role.
 
-# •	Open the role attached to AWS Lambda and Create an inline policy to modify the EBS Volume type.
+ •	Open the role attached to AWS Lambda and Create an inline policy to modify the EBS Volume type.
 
 # Create a gp2 volume and test the function :
 
@@ -68,6 +68,9 @@ On the next page in the Target Section select AWS Lambda in AWS Service and sele
 ![gp3](https://github.com/user-attachments/assets/932015fc-4da7-42f5-8819-d8ceec1d9658)
 
 # Congratulations! Your ebs has been converted to gp3
+
+# Conclusion
+In this Project, we’ve outlined a straightforward process to automate the conversion of Amazon Elastic Block Store (EBS) volumes from type GP2 to GP3 using AWS Lambda and EventBridge. By following the steps provided, you can set up a Lambda function to trigger when a GP2 volume is created, seamlessly converting it to GP3. This automation enhances efficiency and ensures your EBS volumes are optimized for performance. 
 
 
 
